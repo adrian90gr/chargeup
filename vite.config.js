@@ -19,6 +19,6 @@ export default defineConfig({
         }
       }
     },
-    chunkSizeWarningLimit: 1500, 
+    chunkSizeWarningLimit: 6000, 
   }
 })
