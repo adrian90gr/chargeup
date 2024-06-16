@@ -47,7 +47,7 @@ export default function Cabecera() {
         <Link to="/home">
           <img
             className="w-20"
-            src='../../../assets/icons/logotipoChargeUp.png'
+            src='../../../public/icons/logotipoChargeUp.png'
             alt="Logotipo"
           />
         </Link>
