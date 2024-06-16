@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AuthService from "../../services/AuthService";
 import UsuarioService from "../../services/UsuarioService";
-import Logotipo from "../../../public/icons/logotipoChargeUp.png";
+import Logotipo from "../../assets/icons/logotipoChargeUp.png";
 
 
 
