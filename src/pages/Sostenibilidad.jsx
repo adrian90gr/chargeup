@@ -2,6 +2,11 @@ import React from "react";
 import Pie from "../components/general/PieComponent";
 import Cabecera from "../components/general/CabeceraComponent";
 import { BreadCrumbsComponent } from "../components/general/BreadCrumbsComponent";
+import Fotoplacas from "../../public/images/placas.jpg";
+import Fotobaterias from "../../public/images/baterias.webp";
+import Fotoemisiones from "../../public/images/reduccion_emisiones.png";
+import Fotorecursos from "../../public/images/recursos_narurales2.jpg";
+
 
 export default function Sostenibilidad() {
   return (
@@ -30,7 +35,7 @@ export default function Sostenibilidad() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden">
                 <img
-                  src="../../public/images/placas.jpg"
+                  src={Fotoplacas}
                   alt="Paneles solares de alta eficiencia capturando energía solar"
                   className="w-full h-48 object-cover"
                 />
@@ -44,7 +49,7 @@ export default function Sostenibilidad() {
               </div>
               <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden">
                 <img
-                  src="../../public/images/baterias.webp"
+                  src={Fotobaterias}
                   alt="Sistemas de almacenamiento de energía para suministro constante"
                   className="w-full h-48 object-cover"
                 />
@@ -70,7 +75,7 @@ export default function Sostenibilidad() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden">
                 <img
-                  src="../../public/images/reduccion_emisiones.png"
+                  src={Fotoemisiones}
                   alt="Esquema de reducción de emisiones de CO2"
                   className="w-full h-48 object-cover"
                 />
@@ -84,7 +89,7 @@ export default function Sostenibilidad() {
               </div>
               <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden">
                 <img
-                  src="../../public/images/recursos_narurales2.jpg"
+                  src={Fotorecursos}
                   alt="Conservación de recursos naturales mediante eficiencia"
                   className="w-full h-48 object-cover"
                 />
