@@ -5,7 +5,6 @@ import UsuarioService from '../../services/UsuarioService';
 import RegisterService from '../../services/RegisterService';
 import ConfirmModalComponent from './ConfirmModalComponent';
 import { BreadCrumbsComponent } from '../general/BreadCrumbsComponent';
-import Fotousuario from "../../../src/assets/icons/IconoPerfilUsuario.svg";
 
 const TablaUsuarios = () => {
   const [page, setPage] = useState(0);
@@ -422,7 +421,7 @@ const TablaUsuarios = () => {
 
                             {!usuario.foto && (
                               <img
-                                src={Fotousuario}
+                                src="../../../src/assets/icons/IconoPerfilUsuario.svg"
                                 alt="Foto de perfil"
                                 style={{
                                   width: 50,
@@ -506,7 +505,7 @@ const TablaUsuarios = () => {
                                 <Typography>
                                   <strong>Foto:</strong>{" "}
                                   <img
-                                    src={Fotousuario}
+                                    src="../../../src/assets/icons/IconoPerfilUsuario.svg"
                                     alt="Foto de perfil"
                                     style={{
                                       width: 100,

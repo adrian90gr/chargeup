@@ -4,7 +4,6 @@ import {Edit,Delete,Add,KeyboardArrowUp,KeyboardArrowDown} from "@mui/icons-mate
 import EstacionService from "../../services/EstacionService";
 import ConfirmModalComponent from "./ConfirmModalComponent";
 import { BreadCrumbsComponent } from "../general/BreadCrumbsComponent";
-import Fotocargador from "../../../src/assets/icons/cargador.png";
 
 const TablaEstaciones = () => {
   const [page, setPage] = useState(0);
@@ -405,7 +404,7 @@ const TablaEstaciones = () => {
 
                             {!estacion.foto && (
                               <img
-                                src={Fotocargador}
+                                src="../../../src/assets/icons/cargador.png"
                                 alt="Foto de perfil"
                                 style={{
                                   width: 40,
@@ -480,7 +479,7 @@ const TablaEstaciones = () => {
 
                               {!estacion.foto && (
                                 <img
-                                  src={Fotocargador}
+                                  src="../../../src/assets/icons/cargador.png"
                                   alt="Foto de perfil"
                                   style={{
                                     width: 40,

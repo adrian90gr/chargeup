@@ -1,4 +1,3 @@
-
 export default function Pie() {
   return (
     <footer className=" bg-white" aria-labelledby="footer-heading ">

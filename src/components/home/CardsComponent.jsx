@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Button } from "flowbite-react";
-
 export default function Cards() {
   return (
     <section>
