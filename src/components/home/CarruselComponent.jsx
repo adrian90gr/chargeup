@@ -1,15 +1,15 @@
 import React, { useEffect, useState, useRef } from "react";
-import Tesla from '../../../public/images/coche_tesla.webp';
+// import Tesla from '../../../public/images/coche_tesla.webp';
 import CocheCarga from '../../../public/images/coche_cargando.webp';
 import CarreteraNaturaleza from '../../../public/images/carretera_naturaleza.webp';
 
-
-export const CarruselComponent = () => {{}
+const direccionGeneral='../../../public/images/';
+export const CarruselComponent = () => {{direccionGeneral}//Falta por arreglar 
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 
   const slides = [
-    { src: {Tesla}, alt: "Coche Tesla" },
+    { src: direccionGeneral+'/coche_tesla.webp', alt: "Coche Tesla" },
     { src: {CocheCarga}, alt: "Coche Cargando" },
     {
       src: {CarreteraNaturaleza},
