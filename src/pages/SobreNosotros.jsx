@@ -2,6 +2,9 @@ import React from "react";
 import Pie from "../components/general/PieComponent";
 import Cabecera from "../components/general/CabeceraComponent";
 import { BreadCrumbsComponent } from "../components/general/BreadCrumbsComponent";
+import Fotoejecutivo1 from "../../public/images/ejecutivo2.webp";
+import Fotoejecutiva1 from "../../public/images/ejecutiva1.webp";
+import Fotoejecutivo2 from "../../public/images/ejecutivo1.webp";
 
 export default function SobreNosotros() {
   return (
@@ -34,7 +37,7 @@ export default function SobreNosotros() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-8">
             <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden flex-1 max-w-xs">
               <img
-                src="../../public/images/ejecutivo2.webp"
+                src={Fotoejecutivo1}
                 alt="Juan Pérez, CEO & Fundador"
                 className="w-full h-48 object-cover"
               />
@@ -45,7 +48,7 @@ export default function SobreNosotros() {
             </div>
             <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden flex-1 max-w-xs">
               <img
-                src="../../public/images/ejecutiva1.webp"
+                src={Fotoejecutiva1}
                 alt="Ana Gómez, CTO"
                 className="w-full h-48 object-cover"
               />
@@ -56,7 +59,7 @@ export default function SobreNosotros() {
             </div>
             <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden flex-1 max-w-xs">
               <img
-                src="../../public/images/ejecutivo1.webp"
+                src={Fotoejecutivo2}
                 alt="Carlos Rodríguez, Director de Marketing"
                 className="w-full h-48 object-cover"
               />

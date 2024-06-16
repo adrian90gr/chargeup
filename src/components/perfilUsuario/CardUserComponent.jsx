@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import Fotoperfil from "../../../src/assets/icons/IconoPerfilUsuario.svg";
 
 const CardUserComponent = ({ user }) => {
   return (
@@ -13,7 +14,7 @@ const CardUserComponent = ({ user }) => {
             src={
               user.foto
                 ? `data:image/jpeg;base64,${user.foto}`
-                : "../../../src/assets/icons/IconoPerfilUsuario.svg"
+                : {Fotoperfil}
             }
             alt={user.nombre}
             className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"

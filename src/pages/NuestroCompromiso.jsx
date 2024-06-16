@@ -2,6 +2,8 @@ import React from "react";
 import Pie from "../components/general/PieComponent";
 import Cabecera from "../components/general/CabeceraComponent";
 import { BreadCrumbsComponent } from "../components/general/BreadCrumbsComponent";
+import Fotoestacioncarga from "../../public/images/estacion_carga_fotovoltaica.jpg";
+import Fotocochelimpio from "../../public//images/coche_limpio.jpg";
 
 export default function NuestroCompromiso() {
   return (
@@ -52,7 +54,7 @@ export default function NuestroCompromiso() {
             <div className="flex flex-col items-center justify-center md:flex-row gap-6 mt-8">
               <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden flex-1 max-w-xs">
                 <img
-                  src="../../public/images/estacion_carga_fotovoltaica.jpg"
+                  src={Fotoestacioncarga}
                   alt="Iniciativa 1"
                   className="w-full h-48 object-cover"
                 />
@@ -66,7 +68,7 @@ export default function NuestroCompromiso() {
               </div>
               <div className="bg-slate-700 shadow-md rounded-lg overflow-hidden flex-1 max-w-xs">
                 <img
-                  src="../../public//images/coche_limpio.jpg"
+                  src={Fotocochelimpio}
                   alt="Iniciativa 2"
                   className="w-full h-48 "
                 />

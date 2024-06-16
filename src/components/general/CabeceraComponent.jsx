@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import AuthService from "../../services/AuthService";
 import UsuarioService from "../../services/UsuarioService";
 import Logotipo from "../../assets/icons/logotipoChargeUp.png";
+import Iconousuario from "../../src/assets/icons/IconoPerfilUsuario.svg";
 
 
 
@@ -150,7 +151,7 @@ export default function Cabecera() {
                 />
               ) : (
                 <img
-                  src="../../src/assets/icons/IconoPerfilUsuario.svg"
+                  src={Iconousuario}
                   alt="user photo"
                   style={{
                     width: "100%",
