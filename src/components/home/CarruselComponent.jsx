@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Tesla from '../../../public/images/coche_tesla.webp';
 import CocheCarga from '../../../public/images/coche_cargando.webp';
 import CarreteraNaturaleza from '../../../public/images/carretera_naturaleza.webp';
-import Images from "../../../public/images"
+import Images from "../../public/images"
 
 export const CarruselComponent = () => {{{Images}}
   const [currentIndex, setCurrentIndex] = useState(0);
