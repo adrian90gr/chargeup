@@ -1,18 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
-import Tesla from "../../public/images/coche_tesla.webp"
-import CocheCargando from "../../public/images/coche_cargando.webp";
-import Carretera from "../../public/images/carretera_naturaleza.webp";
-
 
 export const CarruselComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 
   const slides = [
-    { src: {Tesla}, alt: "Coche Tesla" },
-    { src: {CocheCargando}, alt: "Coche Cargando" },
+    { src: "../../public/images/coche_tesla.webp", alt: "Coche Tesla" },
+    { src: "../../public/images/coche_cargando.webp", alt: "Coche Cargando" },
     {
-      src: {Carretera},
+      src: "../../public/images/carretera_naturaleza.webp",
       alt: "Coche Cargando",
     },
   ];
