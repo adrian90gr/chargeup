@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "flowbite-react";
-import FotoBombilla from "../../../public/images/Bombilla.webp"
+import FotoNosotros from "../../public/images/SobreNosotros.webp";
+import FotoBombilla from "../../public/images/Bombilla.webp";
+import FotoContacta from "../../public/images/contacta.webp";
 export default function Cards() {
   return (
     <section>
@@ -9,7 +11,7 @@ export default function Cards() {
           <div className="p-6 flex items-center flex-col justify-between bg-slate-700 rounded-xl">
             <img
               className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src={FotoBombilla}
+              src={FotoNosotros}
               alt="blog"
             />
 
@@ -34,7 +36,7 @@ export default function Cards() {
           <div className="p-6 flex items-center flex-col justify-between bg-slate-700 rounded-xl">
             <img
               className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="../../public/images/Bombilla.webp"
+              src={FotoBombilla}
               alt="blog"
             />
 
@@ -59,7 +61,7 @@ export default function Cards() {
           <div className="p-6 flex items-center flex-col justify-between bg-slate-700 rounded-xl">
             <img
               className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              src="../../public/images/contacta.webp"
+              src={FotoContacta}
               alt="blog"
             />
 
