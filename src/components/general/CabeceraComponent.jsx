@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AuthService from "../../services/AuthService";
 import UsuarioService from "../../services/UsuarioService";
+import Logotipo from "../../../public/icons/logotipoChargeUp.png";
 
 
 
@@ -47,7 +48,7 @@ export default function Cabecera() {
         <Link to="/home">
           <img
             className="w-20"
-            src='../../../public/icons/logotipoChargeUp.png'
+            src={Logotipo}
             alt="Logotipo"
           />
         </Link>
