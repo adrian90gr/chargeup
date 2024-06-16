@@ -1,26 +1,22 @@
 import React, { useEffect, useState, useRef } from "react";
-// import Tesla from '../../../public/images/coche_tesla.webp';
+import Tesla from '../../../public/images/coche_tesla.webp';
 import CocheCarga from '../../../public/images/coche_cargando.webp';
 import CarreteraNaturaleza from '../../../public/images/carretera_naturaleza.webp';
 
-const direccionGeneral='../../../public/images/';
-export const CarruselComponent = () => {{direccionGeneral}//Falta por arreglar 
+export const CarruselComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 
   const slides = [
-    { src: direccionGeneral+'/coche_tesla.webp', alt: "Coche Tesla" },//arreglar
-    { src: {CocheCarga}, alt: "Coche Cargando" },
-    {
-      src: {CarreteraNaturaleza},
-      alt: "Carretera naturaleza",
-    },
+    { src: Tesla, alt: "Coche Tesla" },
+    { src: CocheCarga, alt: "Coche Cargando" },
+    { src: CarreteraNaturaleza, alt: "Carretera Naturaleza" },
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 8000); // Cambia cada 3 segundos
+    }, 8000); // Cambia cada 8 segundos
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -34,25 +30,19 @@ export const CarruselComponent = () => {{direccionGeneral}//Falta por arreglar
   }, [currentIndex]);
 
   return (
-    <div className="w-full bg-white  shadow-md dark:bg-neutral-800">
-      <div className="relative overflow-hidden w-full h-80 bg-white ">
+    <div className="w-full bg-white shadow-md dark:bg-neutral-800">
+      <div className="relative overflow-hidden w-full h-80 bg-white">
         <div
           ref={carouselRef}
           className="flex transition-transform duration-700 ease-in-out"
         >
           {slides.map((slide, index) => (
             <div key={index} className="flex-shrink-0 w-full h-80">
-              {slide.src ? (
-                <img
-                  className="w-full h-full object-cover"
-                  src={slide.src}
-                  alt={slide.alt}
-                />
-              ) : (
-                <div className="flex justify-center items-center h-full bg-gray-300 dark:bg-neutral-700">
-                  {slide.content}
-                </div>
-              )}
+              <img
+                className="w-full h-full object-cover"
+                src={slide.src}
+                alt={slide.alt}
+              />
             </div>
           ))}
         </div>
@@ -60,7 +50,7 @@ export const CarruselComponent = () => {{direccionGeneral}//Falta por arreglar
 
       <button
         type="button"
-        className="absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-80 overflow-hidden top-[110px]  text-gray-800 hover:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10"
+        className="absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-80 overflow-hidden top-[110px] text-gray-800 hover:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10"
         onClick={() =>
           setCurrentIndex((currentIndex - 1 + slides.length) % slides.length)
         }
@@ -85,7 +75,7 @@ export const CarruselComponent = () => {{direccionGeneral}//Falta por arreglar
       </button>
       <button
         type="button"
-        className="absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-80 overflow-hidden top-[110px]  text-gray-800 hover:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10"
+        className="absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-80 overflow-hidden top-[110px] text-gray-800 hover:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10"
         onClick={() => setCurrentIndex((currentIndex + 1) % slides.length)}
       >
         <span className="sr-only">Next</span>
