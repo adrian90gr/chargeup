@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AuthService from "../../services/AuthService";
 import UsuarioService from "../../services/UsuarioService";
 import Logotipo from "../../assets/icons/logotipoChargeUp.png";
-import Iconousuario from "../../src/assets/icons/IconoPerfilUsuario.svg";
+import Iconousuario from "../../assets/icons/IconoPerfilUsuario.svg";
 
 
 
