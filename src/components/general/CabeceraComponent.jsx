@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AuthService from "../../services/AuthService";
 import UsuarioService from "../../services/UsuarioService";
+import Logotipo from '../../assets/logotipoChargeUp.png';
 
 export default function Cabecera() {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
@@ -45,7 +46,7 @@ export default function Cabecera() {
         <Link to="/home">
           <img
             className="w-20"
-            src="../../src/assets/icons/logotipoChargeUp.png"
+            src={Logotipo}
             alt="Logotipo"
           />
         </Link>
