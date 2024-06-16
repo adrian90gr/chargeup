@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import EstacionService from "../../services/EstacionService";
 import "../../css/modal.css";
-import Cargador from "../../../src/assets/icons/cargador.svg";
 
 Modal.setAppElement("#root");
 
@@ -207,7 +206,7 @@ const MapComponent = () => {
                     {!location.foto && (
                       <div className="flex flex-col items-center justify-center w-100">
                         <img
-                          src={Cargador}
+                          src="../../../src/assets/icons/cargador.svg"
                           alt=""
                           style={{
                             width: "50px",
@@ -313,7 +312,7 @@ const MapComponent = () => {
 
             {!modalData.foto && (
               <img
-                src={Cargador}
+                src="../../../src/assets/icons/cargador.svg"
                 alt={modalData.nombre}
                 className="w-full h-auto my-4 rounded-xl"
               />
