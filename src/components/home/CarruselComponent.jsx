@@ -9,11 +9,11 @@ export const CarruselComponent = () => {{direccionGeneral}//Falta por arreglar
   const carouselRef = useRef(null);
 
   const slides = [
-    { src: direccionGeneral+'/coche_tesla.webp', alt: "Coche Tesla" },
+    { src: direccionGeneral+'/coche_tesla.webp', alt: "Coche Tesla" },//arreglar
     { src: {CocheCarga}, alt: "Coche Cargando" },
     {
       src: {CarreteraNaturaleza},
-      alt: "Coche Cargando",
+      alt: "Carretera naturaleza",
     },
   ];
 
