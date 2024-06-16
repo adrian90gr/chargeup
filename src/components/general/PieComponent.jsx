@@ -1,6 +1,6 @@
 import IconoFacebook from "../../src/assets/icons/facebook.svg";
-import IconoInstagram from "../../src/assets/icons/icons8-instagram.svg"
-import IconoTwitter from "../../src/assets/icons/icons8-twitterx.svg"
+import IconoInstagram from "../../src/assets/icons8-instagram.svg"
+import IconoTwitter from "../../src/assets/icons8-twitterx.svg"
 
 export default function Pie() {
   return (
