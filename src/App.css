@@ -1,0 +1,33 @@
+*{
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+
+@font-face {
+  font-family:'Fuente1';
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family:'Fuente2';
+  src: url('./fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family:'Fuente3';
+  src: url('./fonts/Poppins-Bold.ttf');
+}
+
+
+
+a{
+text-decoration: none; 
+}
+h1,h2{
+  font-family: 'Fuente3';
+}
+
+h3{
+  font-family: 'Fuente2';
+}
