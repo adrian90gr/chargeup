@@ -1,6 +1,3 @@
-import Iconofacebook from "../../src/assets/icons/facebook.svg"
-import Iconoinstagram from "../../src/assets/icons/icons8-instagram.svg";
-import Iconotwitter from "../../src/assets/icons/icons8-twitterx.svg";
 
 export default function Pie() {
   return (
@@ -21,7 +18,7 @@ export default function Pie() {
             <img
               className=" w-6 h-6 text-gray-400 hover:text-gray-500 mx-1"
               fill="currentColor"
-              src={Iconofacebook}
+              src="../../src/assets/icons/facebook.svg"
               alt=""
             />
           </a>
@@ -31,7 +28,7 @@ export default function Pie() {
             <img
               className=" w-6 h-6 text-gray-400 hover:text-gray-500 mx-1"
               fill="currentColor"
-              src={Iconoinstagram}
+              src="../../src/assets/icons/icons8-instagram.svg"
               alt=""
             />
           </a>
@@ -41,7 +38,7 @@ export default function Pie() {
             <img
               className=" w-6 h-6 text-gray-400 hover:text-gray-500 mx-1"
               fill="currentColor"
-              src={Iconotwitter}
+              src="../../src/assets/icons/icons8-twitterx.svg"
               alt=""
             />
           </a>
