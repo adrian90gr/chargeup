@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "flowbite-react";
-import Fotonosotros from ""
+
 export default function Cards() {
   return (
     <section>
