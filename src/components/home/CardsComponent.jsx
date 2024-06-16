@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "flowbite-react";
+import FotoBombilla from "../../../public/images/Bombilla.webp"
 export default function Cards() {
   return (
     <section>
@@ -8,7 +9,7 @@ export default function Cards() {
           <div className="p-6 flex items-center flex-col justify-between bg-slate-700 rounded-xl">
             <img
               className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                href="../../public/images/SobreNosotros.webp"
+              src={FotoBombilla}
               alt="blog"
             />
 
@@ -33,7 +34,7 @@ export default function Cards() {
           <div className="p-6 flex items-center flex-col justify-between bg-slate-700 rounded-xl">
             <img
               className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              href="../../public/images/Bombilla.webp"
+              src="../../public/images/Bombilla.webp"
               alt="blog"
             />
 
@@ -58,7 +59,7 @@ export default function Cards() {
           <div className="p-6 flex items-center flex-col justify-between bg-slate-700 rounded-xl">
             <img
               className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-              href="../../public/images/contacta.webp"
+              src="../../public/images/contacta.webp"
               alt="blog"
             />
 
