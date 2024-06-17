@@ -207,7 +207,7 @@ const MapComponent = () => {
                     {!location.foto && (
                       <div className="flex flex-col items-center justify-center w-100">
                         <img
-                          src={Cargador}
+                          src= {Cargador}
                           alt=""
                           style={{
                             width: "50px",
