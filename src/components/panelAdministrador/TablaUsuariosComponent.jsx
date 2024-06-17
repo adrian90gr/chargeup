@@ -5,7 +5,7 @@ import UsuarioService from '../../services/UsuarioService';
 import RegisterService from '../../services/RegisterService';
 import ConfirmModalComponent from './ConfirmModalComponent';
 import { BreadCrumbsComponent } from '../general/BreadCrumbsComponent';
-import FotoUsuario from "../../assets/IconoPerfilUsuario.svg"
+import FotoUsuario from "../../assets/logotipoChargeUp.png"
 
 const TablaUsuarios = () => {
   const [page, setPage] = useState(0);
