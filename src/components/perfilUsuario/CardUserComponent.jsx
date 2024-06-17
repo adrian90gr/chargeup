@@ -14,13 +14,13 @@ const CardUserComponent = ({ user }) => {
             src={
               user.foto
                 ? `data:image/jpeg;base64,${user.foto}`
-                :FotoUsuario
+                : FotoUsuario
             }
-            alt={user.nombre}
+            alt={user.nombre || "Usuario sin nombre"}
             className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
           />
         </div>
-        <div className=" space-y-2">
+        <div className="space-y-2">
           <Typography variant="body1" className="w-full">
             <strong>Nombre:</strong> {user.nombre}
           </Typography>
