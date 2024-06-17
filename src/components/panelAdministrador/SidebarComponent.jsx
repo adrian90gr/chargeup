@@ -16,6 +16,8 @@ import Typography from "@mui/material/Typography";
 import AuthService from "../../services/AuthService";
 import UsuarioService from "../../services/UsuarioService";
 import { Link } from "react-router-dom";
+import Logotipo from "../../assets/logotipoChargeUp.png";
+import Usuario from "../../assets/IconoPerfilUsuario.svg";
 
 const drawerWidth = 150;
 
@@ -119,7 +121,7 @@ function Sidebar(props) {
           <Link  to="/home">
           <img
             className="w-14"
-            src="../../src/assets/icons/logotipoChargeUp.png"
+            src={Logotipo}
             alt="Logotipo"
           />
         </Link>
@@ -150,7 +152,7 @@ function Sidebar(props) {
                     />
                   ) : (
                     <img
-                      src="../../src/assets/icons/IconoPerfilUsuario.svg"
+                      src={Usuario}
                       alt="user photo"
                       style={{
                         width: "100%",

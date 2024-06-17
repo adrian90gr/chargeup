@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import CircularProgress from '@mui/material/CircularProgress';
 import Alert from '@mui/material/Alert';
 import Box from '@mui/material/Box';
+import Cargador from '../../assets/cargador.png';
 
 const CardEstacionComponent = () => {
   const [estacion, setEstacion] = useState(null);
@@ -59,7 +60,7 @@ const CardEstacionComponent = () => {
         <div className="w-full md:w-1/2 flex-shrink-0">
           <CardMedia
             component="img"
-            image='../../../src/assets/icons/logotipoChargeUp.png'
+            image={Cargador}
             alt={estacion.nombre}
             className="object-cover rounded-lg mb-2 md:mb-0"
             sx={{ height: '100%' }}
