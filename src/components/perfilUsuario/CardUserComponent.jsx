@@ -3,6 +3,8 @@ import FotoUsuario from "../../assets/IconoPerfilUsuario.svg";
 import { Typography } from "@mui/material";
 
 const CardUserComponent = ({ user }) => {
+  const userImageSrc = user.foto ? `data:image/jpeg;base64,${user.foto}` : FotoUsuario;
+
   return (
     <div className="Card bg-slate-700 text-white p-6 my-5 rounded-lg shadow-lg w-full max-w-md md:w-1/2 mx-auto">
       <Typography variant="h4" className="text-center mb-6 font-bold">
@@ -11,11 +13,7 @@ const CardUserComponent = ({ user }) => {
       <div className="profile-details flex flex-col items-center gap-4">
         <div className="relative w-36 h-36">
           <img
-            src={
-              user.foto
-                ? `data:image/jpeg;base64,${user.foto}`
-                : FotoUsuario
-            }
+            src={userImageSrc}
             alt={user.nombre || "Usuario sin nombre"}
             className="w-full h-full rounded-full object-cover border-4 border-white shadow-lg"
           />
