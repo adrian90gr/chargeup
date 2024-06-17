@@ -178,23 +178,23 @@ const MapComponent = () => {
           )}
 
           {/* Marcador de localización */}
-          {locations.map((location) => (  // Cambiar currentItems a locations aquí
+          {currentItems.map((location) => (
             <Marker
               key={location.id}
               position={{ lat: location.lat, lng: location.lng }}
               onMouseOver={() => handleMouseOver(location)}
               onMouseOut={handleMouseOut}
-              onClick={() => handleMarkerClick(location)} // Aquí se llama a handleMarkerClick
+              onClick={() => handleMarkerClick(location)}
             >
               {/* Ventana de información de la ubicación */}
               {selectedLocation && selectedLocation.id === location.id && (
                 <InfoWindow position={{ lat: location.lat, lng: location.lng }}>
                   <div>
-                    {location.foto && (
+                    {location.foto ? (
                       <div className="flex flex-col items-center justify-center w-100">
                         <img
                           src={`data:image/jpeg;base64,${location.foto}`}
-                          alt=""
+                          alt={location.nombre}
                           style={{
                             width: "50px",
                             height: "auto",
@@ -202,13 +202,11 @@ const MapComponent = () => {
                           }}
                         />
                       </div>
-                    )}
-
-                    {!location.foto && (
+                    ) : (
                       <div className="flex flex-col items-center justify-center w-100">
                         <img
-                          src= {Cargador}
-                          alt=""
+                          src={Cargador}
+                          alt="Cargador"
                           style={{
                             width: "50px",
                             height: "auto",
@@ -232,7 +230,7 @@ const MapComponent = () => {
       </LoadScript>
 
       {/* Tabla de estaciones */}
-      <div className="mt-4 w-full max-w-4xl  rounded-lg">
+      <div className="mt-4 w-full max-w-4xl rounded-lg">
         <div className="bg-white shadow-md rounded-xl">
           <table className="w-full table-auto border-collapse">
             <thead className="bg-slate-700 text-white">
@@ -285,7 +283,7 @@ const MapComponent = () => {
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className="p-2 m-2  bg-slate-700 text-white rounded-lg"
+            className="p-2 m-2 bg-slate-700 text-white rounded-lg"
           >
             Siguiente
           </button>
@@ -303,18 +301,16 @@ const MapComponent = () => {
         {modalData && (
           <div className="p-6 bg-white rounded-lg shadow-lg">
             <h2 className="text-xl font-bold mb-4">{modalData.nombre}</h2>
-            {modalData.foto && (
+            {modalData.foto ? (
               <img
                 src={`data:image/jpeg;base64,${modalData.foto}`}
                 alt={modalData.nombre}
                 className="w-full h-auto my-4 rounded-xl"
               />
-            )}
-
-            {!modalData.foto && (
+            ) : (
               <img
                 src={Cargador}
-                alt={modalData.nombre}
+                alt="Cargador"
                 className="w-full h-auto my-4 rounded-xl"
               />
             )}
