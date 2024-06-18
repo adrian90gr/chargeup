@@ -2,6 +2,21 @@ import React from "react";
 import Cabecera from "../../components/general/CabeceraComponent";
 import Pie from "../../components/general/PieComponent";
 import { BreadCrumbsComponent } from "../../components/general/BreadCrumbsComponent";
+import Perfil1 from "../../../public/soporte/perfil1.jpg";
+import Perfil2 from "../../../public/soporte/perfil2.jpeg";
+import Vehiculo1 from "../../../public/soporte/anadir-vehiculo1.jpeg";
+import Vehiculo2 from "../../../public/soporte/anadir-vehiculo2.jpg";
+import EditarVehiculo1 from "../../../public/soporte/editar-vehiculo1.jpg";
+import EditarVehiculo2 from "../../../public/soporte/editar-vehiculo2.jpg";
+import EliminarVehiculo1 from "../../../public/soporte/eliminar-vehiculo1.jpg";
+import EliminarVehiculo2 from "../../../public/soporte/eliminar-vehiculo2.jpg";
+import EditarPerfil1 from "../../../public/soporte/editar-perfil1.jpg";
+import EditarPerfil2 from "../../../public/soporte/editar-perfil2.jpg";
+import EliminarCuenta1 from "../../../public/soporte/eliminar-cuenta1.jpg";
+import EliminarCuenta2 from "../../../public/soporte/eliminar-cuenta2.jpg";
+
+
+
 
 export default function GestionarCuenta() {
   return (
@@ -33,7 +48,7 @@ export default function GestionarCuenta() {
               <li className="w-[90%]">
                 <img
                   className="shadow-xl"
-                  src="../../../public/images/soporte/perfil1.jpg"
+                  src={Perfil1}
                   alt="Opción Mi Perfil"
                 ></img>
               </li>
@@ -42,7 +57,7 @@ export default function GestionarCuenta() {
               <li className="w-[90%]">
                 <img
                   className="shadow-xl"
-                  src="../../../public/images/soporte/perfil2.jpeg"
+                  src={Perfil2}
                   alt="Opción Mi Perfil"
                 ></img>
               </li>
@@ -65,7 +80,7 @@ export default function GestionarCuenta() {
                 <li className="w-[90%]">
                   <img
                     className="shadow-xl"
-                    src="../../../public/images/soporte/anadir-vehiculo1.jpeg"
+                    src={Vehiculo1}
                     alt="Añadir Vehículo"
                   ></img>
                 </li>
@@ -77,7 +92,7 @@ export default function GestionarCuenta() {
                   <li className="w-[90%]">
                     <img
                       className="shadow-xl"
-                      src="../../../public/images/soporte/anadir-vehiculo2.jpg"
+                      src={Vehiculo2}
                       alt="Añadir Vehículo"
                     ></img>
                   </li>
@@ -95,7 +110,7 @@ export default function GestionarCuenta() {
                   <li className="w-[90%]">
                     <img
                       className="shadow-xl"
-                      src="../../../public/images/soporte/editar-vehiculo1.jpg"
+                      src={EditarVehiculo1}
                       alt="Editar Vehículo"
                     ></img>
                   </li>
@@ -110,7 +125,7 @@ export default function GestionarCuenta() {
                   <li className="w-[90%]">
                     <img
                       className="shadow-xl"
-                      src="../../../public/images/soporte/editar-vehiculo2.jpg"
+                      src={EditarVehiculo2}
                       alt="Editar Vehículo"
                     ></img>
                   </li>
@@ -128,7 +143,7 @@ export default function GestionarCuenta() {
                   <li className="w-[90%]">
                     <img
                       className="shadow-xl"
-                      src="../../../public/images/soporte/eliminar-vehiculo1.jpg"
+                      src={EliminarVehiculo1}
                       alt="Borrar Vehículo"
                     ></img>
                   </li>
@@ -141,7 +156,7 @@ export default function GestionarCuenta() {
                   <li className="w-[90%]">
                     <img
                       className="shadow-xl"
-                      src="../../../public/images/soporte/eliminar-vehiculo2.jpg"
+                      src={EliminarVehiculo2}
                       alt="Borrar Vehículo"
                     ></img>
                   </li>
@@ -166,7 +181,7 @@ export default function GestionarCuenta() {
               <li className="w-[90%]">
                 <img
                   className="shadow-xl"
-                  src="../../../public/images/soporte/editar-perfil1.jpg"
+                  src={EditarPerfil1}
                   alt="Editar Perfil"
                 ></img>
               </li>
@@ -179,7 +194,7 @@ export default function GestionarCuenta() {
               <li className="w-[90%]">
                 <img
                   className="shadow-xl"
-                  src="../../../public/images/soporte/editar-perfil2.jpg"
+                  src={EditarPerfil2}
                   alt="Editar Perfil"
                 ></img>
               </li>
@@ -199,7 +214,7 @@ export default function GestionarCuenta() {
               <li className="w-[90%]">
                 <img
                   className="shadow-xl"
-                  src="../../../public/images/soporte/eliminar-cuenta1.jpg"
+                  src={EliminarCuenta1}
                   alt="Menú de tres puntos"
                 ></img>
               </li>
@@ -213,7 +228,7 @@ export default function GestionarCuenta() {
               <li className="w-[90%]">
                 <img
                   className="shadow-xl"
-                  src="../../../public/images/soporte/eliminar-cuenta2.jpg"
+                  src={EliminarCuenta2}
                   alt="Borrar Cuenta"
                 ></img>
               </li>
