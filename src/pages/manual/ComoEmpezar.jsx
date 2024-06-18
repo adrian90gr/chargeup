@@ -2,6 +2,10 @@ import React from 'react';
 import Cabecera from '../../components/general/CabeceraComponent';
 import Pie from '../../components/general/PieComponent';
 import { BreadCrumbsComponent } from '../../components/general/BreadCrumbsComponent';
+import Registro1 from '../../../public/soporte/registro-1.png';
+import Registro2 from '../../../public/soporte/registro-2.png';
+import Login from '../../../public/soporte/registro-1.png';
+import PaginaPrincipal from '../../../public/soporte/pagina-principal.png';
 
 export default function ComoEmpezar() {
     return (
@@ -21,7 +25,7 @@ export default function ComoEmpezar() {
                 <li>Haz clic en "Regístrate aquí".
                     <ul className='mb-6 flex items-center justify-center'>
                         <li className='  w-[90%]' >
-                            <img className='shadow-xl' src='../../../public/images/soporte/registro-1.png'></img>
+                            <img className='shadow-xl' src={Registro1}></img>
                         </li>
                     </ul>
                 </li>
@@ -29,7 +33,7 @@ export default function ComoEmpezar() {
                 <li>Haz clic en "Enviar" para completar el registro.
                     <ul className='mb-6 flex items-center justify-center'>
                         <li className='  w-[90%]' >
-                            <img className='shadow-xl' src='../../../public/images/soporte/registro-2.png'></img>
+                            <img className='shadow-xl' src={Registro2}></img>
                         </li>
                     </ul>
                 </li>
@@ -44,7 +48,7 @@ export default function ComoEmpezar() {
                 <li>Haz clic en "Iniciar sesión".</li>
                 <ul className='mb-6 flex items-center justify-center'>
                         <li className='  w-[90%]' >
-                            <img className='shadow-xl' src='../../../public/images/soporte/login.png'></img>
+                            <img className='shadow-xl' src={Login}></img>
                         </li>
                     </ul>
             </ol>
@@ -53,7 +57,7 @@ export default function ComoEmpezar() {
             <h2 className="text-2xl font-semibold mt-4 text-slate-700">Primeros Pasos</h2>
             <p>Después de iniciar sesión, puedes configurar tu perfil y explorar las funcionalidades principales de la aplicación.</p>
 
-            <img className='w-[90%] shadow-x self-center' src='../../../public/images/soporte/pagina-principal.png'></img>
+            <img className='w-[90%] shadow-x self-center' src={PaginaPrincipal}></img>
            
         </div>      
         <Pie></Pie>
