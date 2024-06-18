@@ -76,11 +76,6 @@ export default function UsoMapaInteractivo() {
                 <p>Para ver los detalles de una estación de carga:</p>
                 <ol className="list-decimal list-inside">
                     <li>Haz clic en la ubicación de la estación en el mapa. Aparecerá un modal con información básica y un botón para ver más detalles.
-                        <ul className='mb-6 flex items-center justify-center'>
-                            <li className='w-[90%]'>
-                                <img className='shadow-xl' src={DetallesEstacion1} alt="Modal de Estación" />
-                            </li>
-                        </ul>
                     </li>
                     <li>Haz clic en el botón "Ver Detalles" en el modal para ir a la página de detalles de la estación.
                         <ul className='mb-6 flex items-center justify-center'>
